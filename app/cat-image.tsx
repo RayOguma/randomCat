@@ -27,7 +27,7 @@ export function CatImage({url}: CatImageProps){
             </button>
             
             <div className={styles.frame}>
-                {imageUrl && <img src={imageUrl} />} 
+                {imageUrl && <img src={imageUrl} className={styles.img}/>} 
             </div>
         </div>//「条件付きレンダリング」↑
               //imageUrlが空文字列の場合、左辺が「偽」扱いとなり、右辺の<img>は評価されません。よって、何も表示されません。
